@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles previously in frontend/index.html <style type="text/tailwindcss"> can be consolidated here */
+@layer base {
+  body {
+    /* Tailwind applies its base styles, additional global overrides can go here if needed */
+  }
+  #root {
+    /* Ensure #root takes full height if not already handled by body/html */
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes or animations */
+  @keyframes modalOpen {
+    from { transform: translateY(-20px) scale(0.98); opacity: 0; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
+  }
+  .animate-modalOpen {
+    animation: modalOpen 0.2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  }
+}
