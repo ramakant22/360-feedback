@@ -1,0 +1,6 @@
+{
+  "name": "360 Degree Feedback Portal",
+  "description": "A web application for managing 360-degree feedback, allowing users to request feedback, provide feedback, and view summarized reports with AI-powered analysis.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
